@@ -1,0 +1,51 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "description": "Task-list app, created with a purpose of self-education and practical usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "eslint": "eslint \"app/assets/src/**/*.js\"",
+    "webpack:d": "webpack",
+    "webpack:p": "webpack -p",
+    "build:d": "npm run eslint && npm run webpack:d",
+    "build:p": "npm run eslint && npm run webpack:p",
+    "start": "node index & npm run build:d",
+    "postinstall": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenedegtyaryov/task-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugenedegtyaryov/task-list/issues"
+  },
+  "homepage": "https://github.com/eugenedegtyaryov/task-list#readme",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-object-rest-spread": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react": "latest",
+    "jest": "latest",
+    "react-test-renderer": "latest",
+    "webpack": "latest"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "mongojs": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "redux": "latest",
+    "redux-thunk": "latest"
+  }
+}
